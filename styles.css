@@ -1,0 +1,246 @@
+/* Variables de paleta de colores y tipografías */
+:root {
+  --color-bg: #fdfdfd;
+  --color-primary: #FF6F61;   /* Coral vibrante */
+  --color-secondary: #FFC107; /* Amarillo anaranjado */
+  --color-accent: #34A853;    /* Verde acento */
+  --color-text: #333333;
+  --font-sans: 'Montserrat', sans-serif;
+  --transition: 0.3s;
+}
+
+/* Reset y estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+/* Container para centrar contenido */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: transparent;
+  z-index: 1000;
+  transition: background var(--transition), box-shadow var(--transition);
+}
+header.scrolled {
+  background: var(--color-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logo img {
+  height: 50px;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+.nav-menu li {
+  margin-left: 1.5rem;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+.nav-menu a:hover {
+  color: var(--color-primary);
+}
+/* Botón hamburguesa (móvil) */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: url('hero-bg.jpg') no-repeat center/cover;
+  color: #ffffff;
+  padding-top: 70px; /* espacio para header */
+}
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-section h1 span {
+  color: var(--color-primary);
+}
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+.hero-buttons .btn {
+  margin: 0 0.5rem;
+}
+
+/* Estilos de botones */
+.btn {
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background var(--transition), transform var(--transition);
+}
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+.btn-secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Features / Beneficios */
+.features-section {
+  padding: 4rem 0;
+  background-color: var(--color-bg);
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.feature-item {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.feature-item h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+/* Testimonios */
+.testimonials-section {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
+.testimonials-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.testimonial {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-style: italic;
+}
+.testimonial cite {
+  display: block;
+  margin-top: 1rem;
+  text-align: right;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* CTA Final */
+.cta-final-section {
+  padding: 4rem 0;
+  background: var(--color-accent);
+  color: #fff;
+  text-align: center;
+}
+.cta-final-section h2 {
+  margin-bottom: 1rem;
+}
+.cta-final-section p {
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+.footer-links a {
+  margin: 0 1rem;
+  color: #bbb;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #fff;
+}
+.social-icons a {
+  margin: 0 0.5rem;
+  color: #bbb;
+  font-size: 1.2rem;
+}
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* Responsive (móvil) */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--color-bg);
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .nav-menu.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  .testimonial-cards {
+    grid-template-columns: 1fr;
+  }
+  .hero-section {
+    padding-top: 100px;
+    height: auto;
+    padding-bottom: 100px;
+  }
+}
