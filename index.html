@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cevichería Mil Sabores - Sabor Marino Autónomo</title>
+  <title>Cevichería Mil Sabores - El Verdadero Sabor Marino</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@300;400;600;700&family=Pathway+Gothic+One&display=swap" rel="stylesheet">
   
@@ -33,19 +33,29 @@
     <div class="hero-overlay"></div>
     <div class="container hero-content">
       <h1>¡BIENVENIDO A CEVICHERÍA <span class="highlight">MIL SABORES</span>!</h1>
-      <p class="hero-subtitle">Descubre la frescura, el picante perfecto y la autenticidad del mejor ceviche y comida marina. ¡El auténtico sabor del mar en tu mesa!</p>
+      <p class="hero-subtitle">Descubre la frescura, el picante perfecto y la autenticidad del mejor ceviche peruano. ¡El auténtico sabor del mar en tu mesa!</p>
       <div class="hero-buttons">
         <a href="#menu-seccion" class="btn btn-primary">Ver Menú Completo</a>
-        <a href="https://wa.me/51973018091" target="_blank" class="btn btn-secondary">Pedir por Delivery</a>
+        <a href="https://wa.me/51973018091" target="_blank" class="btn btn-secondary">
+          <img src="assets/img/iconos/whatsapp.png" alt="" class="btn-icon-inline"> Pedir por Delivery
+        </a>
       </div>
     </div>
   </section>
 
-  <section id="promociones" class="promo-banner">
-    <div class="container promo-content">
-      <div class="promo-badge">¡PROMO ESPECIAL!</div>
-      <h2>🎉 ¡ZONA CUMPLEAÑERA! 🎉</h2>
-      <p>Ven a celebrar tu día con nosotros y llévate <strong>GRATIS</strong> tu plato preferido. *(Válido mostrando DNI el día de tu cumpleaños).</p>
+  <section id="promociones" class="promo-section">
+    <div class="container promo-grid">
+      <div class="promo-text-content">
+        <div class="promo-badge">¡PROMO ESPECIAL!</div>
+        <h2>🎉 ¡ZONA CUMPLEAÑERA! 🎉</h2>
+        <p class="promo-highlight">¡Tu plato favorito va por nuestra cuenta!</p>
+        <p class="promo-description">Ven a celebrar tu gran día en nuestro recreo campestre junto a toda tu familia. Si estás de cumpleaños, te regalamos tu plato preferido de la carta de forma 100% gratuita.</p>
+        <span class="promo-terms">* Válido presentando tu DNI en físico el mismo día de tu cumpleaños. Consumo mínimo en la mesa.</span>
+      </div>
+      <div class="promo-image-container">
+        <img src="assets/img/promociones/cumpleanos-feliz.jpg" alt="Cumpleañero celebrando en Mil Sabores" class="promo-img">
+        <div class="promo-img-overlay">¡Felicidades! 🎂</div>
+      </div>
     </div>
   </section>
 
@@ -55,23 +65,26 @@
       <p class="section-subtitle">Explora la variedad de sabores que tenemos para ti. Haz clic en las categorías para filtrar.</p>
       
       <div class="menu-tabs">
-        <button class="tab-btn active" onclick="openMenuTab(event, 'ceviches')">Ceviches & Chicharrones</button>
-        <button class="tab-btn" onclick="openMenuTab(event, 'parihuelas')">Parihuelas, Jugosos & Jaleas</button>
-        <button class="tab-btn" onclick="openMenuTab(event, 'arroces')">Arroces & Especialidades</button>
-        <button class="tab-btn" onclick="openMenuTab(event, 'combos')">Combos & Bebidas</button>
+        <button class="tab-btn active" onclick="openMenuTab(event, 'ceviches')">🐟 Ceviches & Chicharrones</button>
+        <button class="tab-btn" onclick="openMenuTab(event, 'parihuelas')">🍲 Sopas, Jugosos & Jaleas</button>
+        <button class="tab-btn" onclick="openMenuTab(event, 'arroces')">🍚 Arroces & Especialidades</button>
+        <button class="tab-btn" onclick="openMenuTab(event, 'combos')">💥 Combos & Bebidas</button>
       </div>
 
       <div id="ceviches" class="tab-content active">
-        <div class="menu-grid">
+        <div class="menu-grid-cards">
           <div class="menu-category-card">
-            <h3>🍋 Ceviches Frescos</h3>
-            <div class="table-responsive">
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-ceviche.jpg" alt="Ceviches Frescos">
+              <div class="card-title-overlay">🍋 Ceviches Frescos</div>
+            </div>
+            <div class="card-body">
               <table class="menu-table">
                 <thead>
                   <tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Cebiche de Pescado</td><td>S/. 20</td><td>S/. 20</td><td>S/. 25-30</td></tr>
+                  <tr class="featured-row"><td>Cebiche de Pescado <span class="row-badge">★ El Rey</span></td><td>S/. 20</td><td>S/. 20</td><td>S/. 25-30</td></tr>
                   <tr><td>Cebiche Mixto</td><td>S/. 20</td><td>S/. 25</td><td>S/. 30-35</td></tr>
                   <tr><td>Cebiche de Cangrejo</td><td>S/. 35</td><td>S/. 40</td><td>S/. 45-50</td></tr>
                   <tr><td>Cebiche de Mariscos</td><td>S/. 30</td><td>S/. 35</td><td>S/. 40-45</td></tr>
@@ -81,14 +94,17 @@
             </div>
           </div>
           <div class="menu-category-card">
-            <h3>🔥 Chicharrones Crujientes</h3>
-            <div class="table-responsive">
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-chicharron.jpg" alt="Chicharrones Crujientes">
+              <div class="card-title-overlay">🔥 Chicharrones Crujientes</div>
+            </div>
+            <div class="card-body">
               <table class="menu-table">
                 <thead>
                   <tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr>
                 </thead>
                 <tbody>
-                  <tr><td>Chicharrón de Pescado</td><td>S/. 20</td><td>S/. 30</td><td>S/. 40-45</td></tr>
+                  <tr class="featured-row"><td>Chicharrón de Pescado</td><td>S/. 20</td><td>S/. 30</td><td>S/. 40-45</td></tr>
                   <tr><td>Chicharrón Mixto</td><td>S/. 25</td><td>S/. 35</td><td>S/. 45-50</td></tr>
                   <tr><td>Chicharrón de Langostino</td><td>S/. 35</td><td>S/. 40</td><td>S/. 45-50</td></tr>
                   <tr><td>Chicharrón de Conchas Blancas</td><td>S/. 35</td><td>S/. 40</td><td>S/. 45-50</td></tr>
@@ -102,119 +118,158 @@
       </div>
 
       <div id="parihuelas" class="tab-content">
-        <div class="menu-grid">
+        <div class="menu-grid-cards">
           <div class="menu-category-card">
-            <h3>🍲 Parihuelas Levanta Muertos</h3>
-            <table class="menu-table">
-              <thead><tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr></thead>
-              <tbody>
-                <tr><td>Parihuela de Congrio</td><td>S/. 45</td><td>S/. 50</td><td>S/. 55</td></tr>
-                <tr><td>Parihuela de Chita</td><td>S/. 45</td><td>S/. 50</td><td>S/. 55</td></tr>
-                <tr><td>Parihuela de Cabria</td><td>S/. 45</td><td>S/. 50</td><td>S/. 55</td></tr>
-                <tr><td>Parihuela de Tramboyo</td><td>S/. 45</td><td>S/. 50</td><td>S/. 55</td></tr>
-              </tbody>
-            </table>
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-parihuela.jpg" alt="Parihuelas">
+              <div class="card-title-overlay">🍲 Parihuelas Levanta Muertos</div>
+            </div>
+            <div class="card-body">
+              <table class="menu-table">
+                <thead><tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr></thead>
+                <tbody>
+                  <tr class="featured-row"><td>Parihuela de Congrio</td><td>S/. 45</td><td>S/. 50</td><td>S/. 55</td></tr>
+                  <tr><td>Parihuela de Chita</td><td>S/. 45</td><td>S/. 50</td><td>S/. 55</td></tr>
+                  <tr><td>Parihuela de Cabria</td><td>S/. 45</td><td>S/. 50</td><td>S/. 55</td></tr>
+                  <tr><td>Parihuela de Tramboyo</td><td>S/. 45</td><td>S/. 50</td><td>S/. 55</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="menu-category-card">
-            <h3>🥘 Jugosos de la Casa</h3>
-            <table class="menu-table">
-              <thead><tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr></thead>
-              <tbody>
-                <tr><td>Jugoso de Congrio</td><td>S/. 40</td><td>S/. 45</td><td>S/. 50</td></tr>
-                <tr><td>Jugoso de Cabria</td><td>S/. 40</td><td>S/. 45</td><td>S/. 50</td></tr>
-                <tr><td>Jugoso de Chita</td><td>S/. 40</td><td>S/. 45</td><td>S/. 50</td></tr>
-                <tr><td>Jugoso de Tramboyo</td><td>S/. 40</td><td>S/. 45</td><td>S/. 50</td></tr>
-              </tbody>
-            </table>
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-jugoso.jpg" alt="Jugosos">
+              <div class="card-title-overlay">🥘 Jugosos de la Casa</div>
+            </div>
+            <div class="card-body">
+              <table class="menu-table">
+                <thead><tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr></thead>
+                <tbody>
+                  <tr><td>Jugoso de Congrio</td><td>S/. 40</td><td>S/. 45</td><td>S/. 50</td></tr>
+                  <tr><td>Jugoso de Cabria</td><td>S/. 40</td><td>S/. 45</td><td>S/. 50</td></tr>
+                  <tr class="featured-row"><td>Jugoso de Chita</td><td>S/. 40</td><td>S/. 45</td><td>S/. 50</td></tr>
+                  <tr><td>Jugoso de Tramboyo</td><td>S/. 40</td><td>S/. 45</td><td>S/. 50</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="menu-category-card">
-            <h3>✨ Jaleas Marinas</h3>
-            <table class="menu-table">
-              <thead><tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr></thead>
-              <tbody>
-                <tr><td>Jalea de Chita</td><td>S/. 35</td><td>S/. 40</td><td>S/. 50</td></tr>
-                <tr><td>Jalea de Congrio</td><td>S/. 35</td><td>S/. 40</td><td>S/. 50</td></tr>
-                <tr><td>Jalea de Cabria</td><td>S/. 35</td><td>S/. 40</td><td>S/. 50</td></tr>
-              </tbody>
-            </table>
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-jalea.jpg" alt="Jaleas">
+              <div class="card-title-overlay">✨ Jaleas Marinas</div>
+            </div>
+            <div class="card-body">
+              <table class="menu-table">
+                <thead><tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr></thead>
+                <tbody>
+                  <tr class="featured-row"><td>Jalea de Chita</td><td>S/. 35</td><td>S/. 40</td><td>S/. 50</td></tr>
+                  <tr><td>Jalea de Congrio</td><td>S/. 35</td><td>S/. 40</td><td>S/. 50</td></tr>
+                  <tr><td>Jalea de Cabria</td><td>S/. 35</td><td>S/. 40</td><td>S/. 50</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
 
       <div id="arroces" class="tab-content">
-        <div class="menu-grid">
+        <div class="menu-grid-cards">
           <div class="menu-category-card">
-            <h3>🍚 Arroces Criollos y Marinos</h3>
-            <table class="menu-table">
-              <thead><tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr></thead>
-              <tbody>
-                <tr><td>Arroz con Pescado</td><td>S/. 20</td><td>S/. 25</td><td>S/. 30</td></tr>
-                <tr><td>Arroz con Marisco</td><td>S/. 20</td><td>S/. 25</td><td>S/. 30</td></tr>
-                <tr><td>Arroz Chaufa de Pescado</td><td>S/. 25</td><td>S/. 30</td><td>S/. 35</td></tr>
-                <tr><td>Arroz Chaufa de Marisco</td><td>S/. 30</td><td>S/. 35</td><td>S/. 40</td></tr>
-                <tr><td>Arroz con Langostino</td><td>S/. 35</td><td>S/. 40</td><td>S/. 45</td></tr>
-              </tbody>
-            </table>
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-arroz.jpg" alt="Arroces">
+              <div class="card-title-overlay">🍚 Arroces Criollos y Marinos</div>
+            </div>
+            <div class="card-body">
+              <table class="menu-table">
+                <thead><tr><th>Plato</th><th>Pers.</th><th>Med.</th><th>Gde.</th></tr></thead>
+                <tbody>
+                  <tr><td>Arroz con Pescado</td><td>S/. 20</td><td>S/. 25</td><td>S/. 30</td></tr>
+                  <tr class="featured-row"><td>Arroz con Marisco</td><td>S/. 20</td><td>S/. 25</td><td>S/. 30</td></tr>
+                  <tr><td>Arroz Chaufa de Pescado</td><td>S/. 25</td><td>S/. 30</td><td>S/. 35</td></tr>
+                  <tr><td>Arroz Chaufa de Marisco</td><td>S/. 30</td><td>S/. 35</td><td>S/. 40</td></tr>
+                  <tr><td>Arroz con Langostino</td><td>S/. 35</td><td>S/. 40</td><td>S/. 45</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="menu-category-card">
-            <h3>🥩 Especialidades Criollas</h3>
-            <table class="menu-table">
-              <thead><tr><th>Plato</th><th>Normal</th></tr></thead>
-              <tbody>
-                <tr><td>Reventado de Cangrejo</td><td>S/. 35</td></tr>
-                <tr><td>Lomo Saltado de Pollo</td><td>S/. 15</td></tr>
-                <tr><td>Milanesa de Pollo</td><td>S/. 15</td></tr>
-                <tr><td>Costillares</td><td>S/. 20</td></tr>
-                <tr><td>Frejolada de Pato</td><td>S/. 20</td></tr>
-                <tr><td>Cuyes</td><td>S/. 20</td></tr>
-              </tbody>
-            </table>
-            <h3 style="margin-top:20px;">🍟 Porciones</h3>
-            <table class="menu-table">
-              <tbody>
-                <tr><td>Maruchas</td><td>S/. 5.00</td></tr>
-                <tr><td>Yuyo Frito</td><td>S/. 10.00</td></tr>
-                <tr><td>Camote / Yuca / Cancha / Arroz Blanco</td><td>S/. 2.00 c/u</td></tr>
-              </tbody>
-            </table>
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-criollo.jpg" alt="Especialidades">
+              <div class="card-title-overlay">🥩 Especialidades Criollas</div>
+            </div>
+            <div class="card-body">
+              <table class="menu-table">
+                <thead><tr><th>Plato</th><th>Normal</th></tr></thead>
+                <tbody>
+                  <tr class="featured-row"><td>Reventado de Cangrejo</td><td>S/. 35</td></tr>
+                  <tr><td>Lomo Saltado de Pollo</td><td>S/. 15</td></tr>
+                  <tr><td>Milanesa de Pollo</td><td>S/. 15</td></tr>
+                  <tr><td>Costillares</td><td>S/. 20</td></tr>
+                  <tr><td>Frejolada de Pato</td><td>S/. 20</td></tr>
+                  <tr><td>Cuyes</td><td>S/. 20</td></tr>
+                </tbody>
+              </table>
+              <h4 class="sub-category-title">🍟 Porciones Adicionales</h4>
+              <table class="menu-table">
+                <tbody>
+                  <tr><td>Maruchas</td><td>S/. 5.00</td></tr>
+                  <tr><td>Yuyo Frito</td><td>S/. 10.00</td></tr>
+                  <tr><td>Camote / Yuca / Cancha / Arroz</td><td>S/. 2.00 c/u</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
 
       <div id="combos" class="tab-content">
-        <div class="menu-grid">
+        <div class="menu-grid-cards">
           <div class="menu-category-card combo-card">
-            <h3>💥 Combos "A Lo Mil Sabores"</h3>
-            <div class="combo-item">
-              <h4>DOBLE A LO MIL SABORES 2</h4>
-              <p class="price">S/. 35.00</p>
-              <span class="combo-desc">¡La combinación perfecta de dos de tus platos favoritos!</span>
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-combos.jpg" alt="Combos">
+              <div class="card-title-overlay">💥 Combos Explosivos</div>
             </div>
-            <div class="combo-item">
-              <h4>TRIPLE A LO MIL SABORES 2</h4>
-              <p class="price">S/. 45.00</p>
-              <span class="combo-desc">Para los verdaderos amantes del mar: tres sabores espectaculares en un solo plato.</span>
+            <div class="card-body">
+              <div class="combo-item">
+                <div class="combo-header">
+                  <h4>DOBLE A LO MIL SABORES 2</h4>
+                  <p class="price">S/. 35.00</p>
+                </div>
+                <span class="combo-desc">¡La combinación perfecta de dos de tus platos favoritos marinos en un solo servicio generoso!</span>
+              </div>
+              <div class="combo-item">
+                <div class="combo-header">
+                  <h4>TRIPLE A LO MIL SABORES 2</h4>
+                  <p class="price">S/. 45.00</p>
+                </div>
+                <span class="combo-desc">Para los verdaderos amantes del buen comer: tres sabores espectaculares y contundentes reunidos.</span>
+              </div>
             </div>
           </div>
           <div class="menu-category-card">
-            <h3>🥤 Bebidas & Gaseosas</h3>
-            <table class="menu-table">
-              <thead><tr><th>Tamaño</th><th>Inca Kola / Coca Cola</th></tr></thead>
-              <tbody>
-                <tr><td>Personal</td><td>S/. 3.00</td></tr>
-                <tr><td>1 Litro</td><td>S/. 6.00</td></tr>
-                <tr><td>1 Litro y Medio</td><td>S/. 8.00</td></tr>
-                <tr><td>2 Litros y Medio</td><td>S/. 10.00</td></tr>
-                <tr><td>3 Litros</td><td>S/. 13.00</td></tr>
-              </tbody>
-            </table>
-            <h3 style="margin-top:20px;">🍹 Jarras de la Casa</h3>
-            <table class="menu-table">
-              <tbody>
-                <tr><td>Limonada Natural</td><td>S/. 6.00</td></tr>
-                <tr><td>Chicha Morada Heladita</td><td>S/. 7.00</td></tr>
-              </tbody>
-            </table>
+            <div class="card-img-header">
+              <img src="assets/img/platos/header-bebidas.jpg" alt="Bebidas">
+              <div class="card-title-overlay">🥤 Bebidas & Gaseosas</div>
+            </div>
+            <div class="card-body">
+              <table class="menu-table">
+                <thead><tr><th>Gaseosas (Inca / Coca)</th><th>Precio</th></tr></thead>
+                <tbody>
+                  <tr><td>Personal</td><td>S/. 3.00</td></tr>
+                  <tr><td>1 Litro</td><td>S/. 6.00</td></tr>
+                  <tr><td>1 Litro y Medio</td><td>S/. 8.00</td></tr>
+                  <tr><td>2 Litros y Medio</td><td>S/. 10.00</td></tr>
+                  <tr><td>3 Litros</td><td>S/. 13.00</td></tr>
+                </tbody>
+              </table>
+              <h4 class="sub-category-title">🍹 Jarras Heladas de la Casa</h4>
+              <table class="menu-table">
+                <tbody>
+                  <tr class="featured-row"><td>Chicha Morada Tradicional</td><td>S/. 7.00</td></tr>
+                  <tr><td>Limonada Natural</td><td>S/. 6.00</td></tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -241,43 +296,72 @@
   <section id="contact" class="contact-section">
     <div class="container contact-grid">
       <div class="contact-info">
-        <h2>🛵 ¡Pide tu Delivery Ahora!</h2>
-        <p>Llevamos el sabor del mar directo a tu hogar de forma segura y rápida.</p>
+        <h2>🛵 ¡Haz tu pedido al Delivery!</h2>
+        <p>Llevamos la frescura total del mar directo a la comodidad de tu hogar de forma segura, rápida e higiénica.</p>
         
         <div class="phone-buttons">
-  <a href="https://wa.me/51973018091" class="btn btn-whatsapp">
-    <img src="assets/img/iconos/Whatsapp.png" alt="WhatsApp" class="wsp-icon">
-    WhatsApp: 973 018 091
-  </a>
-
-  <a href="https://wa.me/51916180776" class="btn btn-whatsapp">
-    <img src="assets/img/iconos/Whatsapp.png" alt="WhatsApp" class="wsp-icon">
-    WhatsApp: 916 180 776
-  </a>
-</div>
+          <a href="https://wa.me/51973018091" target="_blank" class="btn btn-whatsapp">
+            <img src="assets/img/iconos/whatsapp.png" alt="WhatsApp Icon" class="btn-icon">
+            <span>WhatsApp: 973 018 091</span>
+          </a>
+          <a href="https://wa.me/51916180776" target="_blank" class="btn btn-whatsapp">
+            <img src="assets/img/iconos/whatsapp.png" alt="WhatsApp Icon" class="btn-icon">
+            <span>WhatsApp: 916 180 776</span>
+          </a>
+          <a href="https://wa.me/51924863202" target="_blank" class="btn btn-whatsapp">
+            <img src="assets/img/iconos/whatsapp.png" alt="WhatsApp Icon" class="btn-icon">
+            <span>WhatsApp: 924 863 202</span>
+          </a>
+        </div>
 
         <div class="apps-mention">
-          <p>También encuéntranos en <strong>LLAMAFOOD</strong> disponible en App Store y Google Play.</p>
+          <p>También encuéntranos y realiza tus pedidos en la plataforma de <strong>LLAMAFOOD</strong> disponible en App Store y Google Play.</p>
         </div>
       </div>
 
       <div class="payment-methods">
         <h3>💳 Métodos de Pago Aceptados</h3>
-        <p>Aceptamos todo tipo de tarjetas de crédito, débito y transferencias móviles directas.</p>
-        <div class="payment-badges">
-          <img src="assets/img/iconos/Yape.png" alt="Yape" class="payment-logo">
-          <img src="assets/img/iconos/Visa.png" alt="Visa" class="payment-logo">
-          <img src="assets/img/iconos/Mastercard.jpg" alt="Mastercard" class="payment-logo">
-          <img src="assets/img/iconos/BBVA.png" alt="BBVA" class="payment-logo">
+        <p class="payment-intro">Para tu mayor comodidad, aceptamos transferencias móviles instantáneas y tarjetas directamente en caja o en tu entrega:</p>
+        
+        <div class="payment-badges-grid">
+          <div class="payment-row-card">
+            <img src="assets/img/iconos/yape.png" alt="Logo Yape" class="payment-logo">
+            <div class="payment-text">
+              <strong>YAPE</strong>
+              <p>Transferencias directas y rápidas sin comisiones.</p>
+            </div>
+          </div>
+          <div class="payment-row-card">
+            <img src="assets/img/iconos/visa.png" alt="Logo Visa" class="payment-logo">
+            <div class="payment-text">
+              <strong>VISA / VISA ELECTRON</strong>
+              <p>Aceptamos todas las tarjetas de débito y crédito.</p>
+            </div>
+          </div>
+          <div class="payment-row-card">
+            <img src="assets/img/iconos/mastercard.png" alt="Logo Mastercard" class="payment-logo">
+            <div class="payment-text">
+              <strong>MASTERCARD</strong>
+              <p>Pagos globales procesados de forma segura al instante.</p>
+            </div>
+          </div>
+          <div class="payment-row-card">
+            <img src="assets/img/iconos/bbva.png" alt="Logo BBVA" class="payment-logo">
+            <div class="payment-text">
+              <strong>BBVA</strong>
+              <p>Aceptamos transacciones y tarjetas bancarias del BBVA.</p>
+            </div>
+          </div>
         </div>
-        <p class="subtext-pago">Pagos rápidos y sin contacto al recibir tu pedido.</p>
+        
+        <p class="subtext-pago">🛡️ Pagos 100% protegidos, rápidos y sin contacto al recibir tus platos.</p>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container footer-content">
-      <p>&copy; 2026 Cevichería Mil Sabores. Todos los derechos reservados. <br> Recreo Campestre.</p>
+      <p>&copy; 2026 Cevichería Mil Sabores. Todos los derechos reservados. <br> Recreo Campestre de Calidad.</p>
       <div class="footer-links">
         <a href="#">Aviso de Privacidad</a>
         <a href="#">Términos y Condiciones</a>
